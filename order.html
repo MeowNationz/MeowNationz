@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Fadi's Cat Corner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🐾 Fadi's Cat Corner</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="order.html">Order</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="product">Product:</label>
+            <select id="product" name="product">
+                <option>Product 1</option>
+                <option>Product 2</option>
+                <option>Product 3</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="message">Message / Notes:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button type="submit" class="btn">Submit Order</button>
+        </form>
+        <p class="note">*Orders will be processed manually via email.*</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Fadi's Cat Corner 🐾</p>
+    </footer>
+</body>
+</html>
